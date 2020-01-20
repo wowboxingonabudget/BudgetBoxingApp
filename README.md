@@ -35,6 +35,7 @@ The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off.
 app sends 'numpad1' to the slaves. Basically it's the same as you pressing '1' on the numpad for a hotkey.
 The macro that you want to set up is as follows:    
      
+     
 /cast [@focustarget] Frostbolt  
 or   
 /cast [@player] Spellname  
