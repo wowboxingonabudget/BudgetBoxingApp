@@ -29,7 +29,6 @@ to "Set Focus." This button will have each window type out "/tar 'name' and '/fo
 work. Select the checkboxes for the corresponding buttons you would like to broadcast. 
 The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off. 'x' and
 'space' have a shift modifier and will only broadcast when it is held down. </dd>
-</dl>
 
 <dd><b>5</b>: Everything should be staged with the app at this point. The last thing that you need to 
   do is configure a couple of macros for the chars. The way the app works is when you press '1', the
