@@ -36,7 +36,7 @@ The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off.
 ;-------------
 Gui, Font, cWhite
 Gui, Add, Text, xm ym w250 Center,Windows to be used for multiboxing:
-Gui, Add, Button, xm+30 y+10 w100 h30 gButton_Test, Rename Windows
+Gui, Add, Button, xm+30 y+10 w100 h30 gRename_Windows, Rename Windows
 Gui, Add, Button, xm+150 yp w100 h30 gSubmit_All, Register Window Names
 Gui, Add, Checkbox, xm+20 yp+50 cWhite vWindow_One_CheckBox gSubmit_All, Window One
 Gui, Add, Edit, xp+100 r1 cBlack vWindow_One_Name w135, 1WOW
@@ -87,7 +87,7 @@ return
 ;Labels
 ;---------
 ;-------------
-Button_Test:
+Rename_Windows:
 ;	Gui, Submit, NoHide
 ;	if(Window_One_CheckBox == 1)
 ;		MsgBox, Using %Window_One_Name%
