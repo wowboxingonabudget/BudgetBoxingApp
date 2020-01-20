@@ -6,7 +6,8 @@ Published: 1/20/2020
   
 Send suggestions or issues to wowboxingonabudget@gmail.com  
   
-Description:  
+<dl>
+<dd>Description: </dd>
 This is a rudimentary multi-boxing app for World of Warcraft. It currently supports 
 up to 4 windows, but can easily be modified to support more. It is able to find all 
 windows named "World of Warcraft" and rename them "1WOW," "2WOW," etc. These renamed
@@ -14,7 +15,7 @@ windows are used to translate commands to the multiple windows that are up. If y
 different names, click 'Register Window Names' after you enter the names in the text 
 boxes.
   
-How to use:  
+<dd>How to use:  </dd>
 1:	You can manually rename windows with a third party app like "Window Title Changer" or
 you can use the button at the top of the app which will rename the windows automatically.
 One consideration that needs to be made with the current version of this app is the 
@@ -29,3 +30,4 @@ to "Set Focus." This button will have each window type out "/tar 'name' and '/fo
 work. Select the checkboxes for the corresponding buttons you would like to broadcast. 
 The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off. 'x' and
 'space' have a shift modifier and will only broadcast when it is held down. 
+</dl>
