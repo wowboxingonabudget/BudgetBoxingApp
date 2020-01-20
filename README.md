@@ -30,3 +30,17 @@ work. Select the checkboxes for the corresponding buttons you would like to broa
 The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off. 'x' and
 'space' have a shift modifier and will only broadcast when it is held down. </dd>
 </dl>
+
+<dd><b>5</b>: Everything should be staged with the app at this point. The last thing that you need to 
+  do is configure a couple of macros for the chars. The way the app works is when you press '1', the
+app sends 'numpad1' to the slaves. Basically it's the same as you pressing '1' on the numpad for a hotkey.
+The macro that you want to set up is as follows:  
+  
+/cast [@focustarget] Frostbolt  
+or   
+/cast [@player] Spellname  
+  
+With your macros configured like that, your slaves will target the focus target and cast the corresponding spell. 
+You can use @player to cast spells on 'yourself' (The slave casting an AOE where they are standing) for spells like Blizzard.
+</dd>
+</dl>
