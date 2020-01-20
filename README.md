@@ -1,6 +1,5 @@
 # BudgetBoxingApp
 
-A rudimentary multi-boxing app for WoW.  
 Author: JJHEO  
 Published: 1/20/2020  
   
@@ -16,7 +15,7 @@ different names, click 'Register Window Names' after you enter the names in the 
 boxes.</dd>
   
 <dt>How to use:  </dt>
-<dd>_1_:	You can manually rename windows with a third party app like "Window Title Changer" or
+<dd><b>1</b>:	You can manually rename windows with a third party app like "Window Title Changer" or
 you can use the button at the top of the app which will rename the windows automatically.
 One consideration that needs to be made with the current version of this app is the 
 controlling character should be used in window "1WOW" for now. </dd>
