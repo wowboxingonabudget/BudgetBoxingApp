@@ -33,8 +33,8 @@ The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off.
 <dd><b>5</b>: Everything should be staged with the app at this point. The last thing that you need to 
   do is configure a couple of macros for the chars. The way the app works is when you press '1', the
 app sends 'numpad1' to the slaves. Basically it's the same as you pressing '1' on the numpad for a hotkey.
-The macro that you want to set up is as follows:  
-  
+The macro that you want to set up is as follows:    
+     
 /cast [@focustarget] Frostbolt  
 or   
 /cast [@player] Spellname  
