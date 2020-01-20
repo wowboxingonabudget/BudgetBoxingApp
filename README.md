@@ -1,8 +1,8 @@
 # BudgetBoxingApp
 
-A rudimentary multi-boxing app for WoW.
-Author: JJHEO
-Published: 1/20/2020
+A rudimentary multi-boxing app for WoW.  
+Author: JJHEO  
+Published: 1/20/2020  
 
 Send suggestions or issues to wowboxingonabudget@gmail.com
 
