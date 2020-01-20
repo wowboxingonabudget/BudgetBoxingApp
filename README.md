@@ -36,9 +36,9 @@ app sends 'numpad1' to the slaves. Basically it's the same as you pressing '1' o
 The macro that you want to set up is as follows:  
   
     
-/cast [@focustarget] Frostbolt  
+  <b>/cast [@focustarget] Frostbolt  </b>
 or   
-/cast [@player] Spellname  
+  /cast [@player] Spellname  
   
 With your macros configured like that, your slaves will target the focus target and cast the corresponding spell. 
 You can use @player to cast spells on 'yourself' (The slave casting an AOE where they are standing) for spells like Blizzard.
