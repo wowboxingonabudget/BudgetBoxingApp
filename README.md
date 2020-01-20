@@ -20,12 +20,12 @@ you can use the button at the top of the app which will rename the windows autom
 One consideration that needs to be made with the current version of this app is the 
 controlling character should be used in window "1WOW" for now. </dd>
    
-<dd>2: Once the windows are renamed, log into the characters and join them all to a party.   </dd>
+<dd><b>2</b>: Once the windows are renamed, log into the characters and join them all to a party.   </dd>
   
-<dd>3: Make sure the name of whoever the lead character is going to be is in the text box next 
+<dd><b>3</b>: Make sure the name of whoever the lead character is going to be is in the text box next 
 to "Set Focus." This button will have each window type out "/tar 'name' and '/focus'  </dd>
   
-<dd>4: Once all the characters have the main character focused, the button broadcasting should
+<dd><b>4</b>: Once all the characters have the main character focused, the button broadcasting should
 work. Select the checkboxes for the corresponding buttons you would like to broadcast. 
 The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off. 'x' and
 'space' have a shift modifier and will only broadcast when it is held down. </dd>
