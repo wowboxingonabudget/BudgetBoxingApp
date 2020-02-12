@@ -30,6 +30,7 @@ The checkbox for 'Enable Button Broadcasting' will turn broadcasting on and off.
 */
 
 #SingleInstance, Force	
+#EscapeChar \
 
 ;Gui Layout
 ;---------
@@ -52,7 +53,7 @@ Gui, Add, Button, xm+40 yp+50 h20 gSend_Focus_Command, Set Focus
 Gui, Add, Edit, xp+70 yp cBlack vFollow_Char_Name w135 gSubmit_All, Lead Char Name
 
 ;Numbers
-Gui,Add, Checkbox, x75 yp+40 cWhite vEnable_Broadcasting gSubmit_All, Enable Button Broadcasting
+Gui,Add, Checkbox, x75 yp+40 cWhite vEnable_Broadcasting gSubmit_All Checked, Enable Button Broadcasting
 Gui,Add, Checkbox, x80 y270 cWhite vEnable_1_Broadcast gSubmit_All, 1
 Gui,Add, Checkbox, cWhite vEnable_2_Broadcast gSubmit_All, 2
 Gui,Add, Checkbox, cWhite vEnable_3_Broadcast gSubmit_All, 3
@@ -77,6 +78,7 @@ Gui,Add, Checkbox, cWhite vEnable_f_Broadcast gSubmit_All, F
 Gui,Add, Checkbox, cWhite vEnable_q_Broadcast gSubmit_All, Q
 Gui,Add, Checkbox, cWhite vEnable_x_Broadcast gSubmit_All, X
 Gui,Add, Checkbox, cWhite vEnable_space_Broadcast gSubmit_All, Space
+Gui,Add, Checkbox, cWhite vEnable_click_Broadcast gSubmit_All, Broadcast Click
 
 Gui, +AlwaysOnTop
 Gui, Color, Black
@@ -124,6 +126,16 @@ GuiClose:
 ;Hotkeys
 ;---------
 ;-------------
+
+$f9::
+	WinActivate, WOW Boxing on a Budget
+	GuiControlGet, Enable_Broadcasting
+	if(Enable_Broadcasting)
+		Control, Uncheck ,, Button7, A
+	else
+		Control, Check ,, Button7, A
+return
+
 $1::
 if(Enable_Broadcasting==1 and Enable_1_Broadcast == 1) {
 	if(Window_One_CheckBox==1)
@@ -284,6 +296,23 @@ else
 return
 
 
+$`::
+if(Enable_Broadcasting==1 and Enable_backtick_Broadcast == 1) {
+	if(Window_One_CheckBox==1)
+		ControlSend, , `, %Window_One_Name%
+	if(Window_Two_CheckBox==1)
+		ControlSend, , `, %Window_Two_Name%
+	if(Window_Three_CheckBox==1)
+		ControlSend, , `, %Window_Three_Name%
+	if(Window_Four_CheckBox==1)
+		ControlSend, , `, %Window_Four_Name%
+} 
+else
+	Send, 0
+return
+
+
+
 $f1::
 if(Enable_Broadcasting==1 and Enable_f1_Broadcast == 1) {
 	if(Window_One_CheckBox==1)
@@ -368,8 +397,6 @@ return
 
 !f::
 if(Enable_Broadcasting==1 and Enable_follow_Broadcast == 1) {
-	if(Window_One_CheckBox==1)
-		ControlSend, , {f12}, %Window_One_Name%
 	if(Window_Two_CheckBox==1)
 		ControlSend, , {f12}, %Window_Two_Name%
 	if(Window_Three_CheckBox==1)
@@ -471,8 +498,23 @@ if(Enable_Broadcasting==1 and Enable_space_Broadcast == 1) {
 		ControlSend, , {space up}, %Window_Four_Name%
 		ControlSend, , {f12}, %Window_Four_Name%
 	}
-else
-	Send, {space}
+}
+return
+
+!$LButton::
+if(Enable_Broadcasting==1 and Enable_click_Broadcast == 1) {
+	if(Window_Two_CheckBox==1) {
+		ControlSend, , '', %Window_Two_Name%
+		ControlSend, , \\, %Window_Two_Name%
+	}
+	if(Window_Three_CheckBox==1) {
+		ControlSend, , '', %Window_Three_Name%
+		ControlSend, , \\, %Window_Three_Name%
+	}
+	if(Window_Four_CheckBox==1) {
+		ControlSend, , '', %Window_Four_Name%
+		ControlSend, , \\, %Window_Four_Name%
+	}
 return
 }
 
